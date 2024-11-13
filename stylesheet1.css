@@ -1,0 +1,144 @@
+   
+* {
+    margin: 10px 20x;;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ 
+body {
+    font-family: Georgia, serif;
+    background-color: AliceBlue;  
+    color: DarkSlateGray;  
+    line-height: 1.6;
+}
+
+ 
+h1, h4 {
+    color: MidnightBlue;  
+    margin: 20px 0;
+}
+
+ 
+table {
+    width: 50%;
+    margin: 30px auto;
+    border-collapse: collapse;
+}
+
+td {
+    padding: 20px;
+    text-align: center;
+    border: 2px solid DodgerBlue;  
+}
+
+h5 {
+    color: SteelBlue;  
+}
+
+ 
+nav {
+    text-align: center;
+    margin: 20px ;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: SteelBlue;
+    font-weight: bold;
+}
+
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+ 
+i {
+    font-style: italic;
+    color: SlateGray;  
+}
+ 
+a {
+    color: SteelBlue;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+p{
+	text-align:left
+
+}
+
+.container {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    margin: auto;
+}
+
+.container img {
+width: 25%;
+margin: 1vw;
+flex-grow: 0; 
+flex-shrink: 1; 
+}
+
+.container p {
+width: 35%;
+text-align: center;
+font-size: 2vw;
+flex-grow: 1;
+flex-shrink: 1;
+display: flex; 
+justify-content: center; 
+align-items: center; 
+}
+
+.animated-text {
+    font-size: 20px;
+    font-weight: bold;
+    color: blue;
+    animation: textAnimation 3s ease infinite;
+}
+
+blockquote {
+    font-weight:bold
+}
+
+.blind img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
+    height: auto;
+}
+
+
+@keyframes textAnimation {
+    0%, 100% {
+        color: blue;
+        transform: scale(1);
+    }
+    50% {
+        color: purple;
+        transform: scale(1.1);
+    }
+}
+
+@media only screen and (max-width: 600px){
+.container{
+  flex-direction: column;
+}
+}
